@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fidelity Store</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<div class="wrapper">
+<!--slide-left-->
+<div class="slide-left">
+<!--menu-->
+<div class="menu">
+<a href="#" class="logo">FIDELITY</a>
+<ul>
+<li><a href="#">MENS</a></li>
+<li><a href="#">WOMENS</a></li>
+<li><a href="#">CUSTOM</a></li>
+</ul>
+</div>
+<!--content--------------------------->
+<!--text-container-1------------>
+<div class="text-container1 active-text-slide">
+<div class="product-name">
+<h1>ROLEX</h1>
+</div>
+<div class="footer">
+<div class="footer-heading">
+<h2>ROLEX___42mm</h2>
+<span>S</span>
+<span>M</span>
+<span>L</span>
+</div>
+<p style="color:#949393; font-weight:bold;">FIDELITY</p>
+
+</div>
+</div>
+<!--text-container-2------------>
+<div class="text-container2">
+<div class="product-name">
+<h1>ROLLO</h1>
+</div>
+<div class="footer">
+<div class="footer-heading">
+<h2>ROLLO___32mm</h2>
+<span>S</span>
+<span>M</span>
+<span>L</span>
+</div>
+<p style="color:#949393; font-weight:bold;">FIDELITY</p>
+
+</div>
+</div>
+<!--social-Links-------------->
+<div class="social">
+<a href="#" class="fb">Fb</a>
+<a href="#" class="in">In</a>
+<a href="#" class="yu">Yu</a>
+</div>
+</div>
+<!--slide-right-->
+<div class="slide-right">
+<!--right-side-menu-->
+<div class="img-menu">
+<a href="#" class="cart"><img src="images/basket-cart-icon-27.png" height="30px;"></a>
+<a href="#" class="login">LOGIN</a>
+</div>
+<!--img-content------------------------------->
+<!---(slide-1)-img-container-1-->
+<div class="img-container1 active-img-slide">
+<div class="product-img">
+<img src="images/w3.png" height="500px">
+<div class="cart-opt">
+<p class="price">$225.00</p>
+<a href="#" class="add-btn">ADD TO CART</a>
+</div>
+</div>
+</div>
+<!---(slide-2)-img-container-2-->
+<div class="img-container2">
+<div class="product-img">
+<img src="images/w4.png"height="500px">
+<div class="cart-opt">
+<p class="price">$205.00</p>
+<a href="#" class="add-btn">ADD TO CART</a>
+</div>
+</div>
+</div>
+<!--change-slide-btns-->
+<div class="button">
+<a href="#" class="first-btn active-btn">01</a>
+<a href="#" class="second-btn">02</a>
+</div>
+</div>
+</div>
+<!--ADDING-Jquery-Link-->
+<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+<script type="text/javascript">
+//slide-btns
+$(document).on('click','.first-btn,.second-btn',function(){
+	$(this).addClass('active-btn').siblings().removeClass('active-btn')
+});
+//text-slide
+$(document).on('click','.first-btn',function(){
+	$('.text-container1').addClass('active-text-slide').siblings('.text-container2').removeClass('active-text-slide')
+});
+$(document).on('click','.second-btn',function(){
+	$('.text-container2').addClass('active-text-slide').siblings('.text-container1').removeClass('active-text-slide')
+});
+
+//for img slide
+$(document).on('click','.first-btn',function(){
+	$('.img-container1').addClass('active-img-slide').siblings('.img-container2').removeClass('active-img-slide')
+});
+$(document).on('click','.second-btn',function(){
+	$('.img-container2').addClass('active-img-slide').siblings('.img-container1').removeClass('active-img-slide')
+});
+</script>
+</body>
+</html>

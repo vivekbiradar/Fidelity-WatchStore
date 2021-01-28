@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;}
+ul{
+	list-style:none;}
+a{
+	text-decoration:none;}
+.slide-left{
+	width:50%;
+	height:100vh;
+	background-image:url(../images/bg.png);
+	background-attachment:fixed;
+	background-size:100vh auto;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	position:relative;}
+.slide-right{
+	width:50%;
+	height:100vh;
+		background-image:url(../images/bg2.png);
+	background-repeat:no-repeat;
+	overflow:hidden;
+	position:relative;}
+.wrapper{
+	display:flex;}
+.menu,.img-menu{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin:30px 50px;
+	font-family:calibri;
+	}
+.menu ul{
+	display:flex;}
+.menu ul li{
+	
+	
+	margin:0px 20px;
+	font-weight:700;
+	letter-spacing:2px;
+	font-size:13px;}
+	.menu a{
+		color:#e9e9e9;}
+	.logo{
+		font-weight:bold;
+		letter-spacing:3px;
+		border:2px solid #686868;
+		padding:5px 20px;}
+	.login{
+		width:110px;
+		height:40px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		background-color:#313237;
+		color:#FFFFFF;
+		border-radius:10px;}
+	.login:hover{
+		background-color:#5a5b53;
+		transition:all ease 0.5s;}
+	.product-name{
+		position:absolute;
+		left:50%;
+		top:20%;
+		transform:translate(-50%,-20%);
+		}
+	.product-name h1{
+		letter-spacing:0px;
+		margin:0px;
+		padding:0px;
+		font-family:BAD GRUNGE;
+		font-size:250px;
+		color:#f3f3f3;}
+	.footer-heading{
+		font-family:calibri;
+		color:#e9e9e9;
+		display:flex;
+		align-items:center;
+		height:40px;
+		}
+	.footer{
+		position:absolute;
+		width:100%;
+		padding:50px;
+		box-sizing:border-box;
+		left:0px;
+		bottom:0px;}
+		.footer-heading h2{
+			margin-right:20px;}
+		.footer-heading span{
+			border:2px solid #555555;
+			width:30px;
+			box-sizing:border-box;
+			margin:0px 5px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height:30px;}
+		.footer p{
+			color:#b7b5b5;
+			font-family:calibri;
+			line-height:15px;
+			font-weight:400;
+			width:300px;
+			font-size:16px;}
+		.social{
+			position:absolute;
+			bottom:40px;
+			right:40px;}
+		.social a{
+			color:#dddddd;
+			border-left:2px solid #6e6e6e;
+			font-family:myriad pro;
+			padding:0px 10px;
+			letter-spacing:2px;
+			transition:all ease 0.5s;
+			}
+		.fb:hover{
+			border-left:2px solid #088adc;
+			color:#088adc;
+			}
+		.in:hover{
+			border-left:2px solid #d5ba00;
+			color:#d5ba00;
+			}
+		.yu:hover{
+			border-left:2px solid #c91a1d;
+			color:#c91a1d;
+			}
+		.product-img{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			box-sizing:border-box;
+			height:70%;}
+			.cart-opt{
+				display:flex;
+				flex-direction:column;
+				position:absolute;
+				bottom:50px;
+				right:60px;}
+		.cart-opt a,p{
+			font-family:calibri;
+			font-weight:bold;
+			letter-spacing:1px;
+			line-height:10px;}
+		.price{
+			font-size:25px;
+			color:#161616;}
+        .add-btn{
+			background-color:#313237;
+			font-size:18px;
+			border-radius:5px;
+			width:150px;
+			height:45px;
+			color:#FFFFFF;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			box-shadow:2px 2px 5px rgba(0,0,0,0.5);}
+		.add-btn:hover{
+			background-color:#5a5b63;
+			transition:all ease 0.5s;}
+		.button{
+			position:absolute;
+			bottom:50px;
+			left:40px;
+			display:flex;}
+		.button a{
+			color:#fbfbfb;
+			background-color:#848484;
+			width:40px;
+			height:40px;
+			font-size:14px;
+			border-radius:50%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			font-family:calibri;
+			margin:0px 5px;
+			}
+		.active-btn{
+			width:80px !important;
+			height:80px !important;
+			background-color:#313237 !important;
+			font-size:25px !important;}
+		.text-container1,.text-container2{
+			position:absolute;
+			width:100%;
+			height:88%;
+			left:-10000px;}
+		.active-text-slide{
+			left:auto;}
+		.active-text-slide h1{
+			animation:text-animation ease 0.5s;}
+		.img-container1,.img-container2{
+			position:absolute;
+			width:100%;
+			height:87%;
+			right:-1000000px;
+			}
+		.active-img-slide{
+			right:auto;
+			animation:fade ease 1s;}
+		.active-text-slide > .footer{
+			animation:fade ease 1s;}
+		@keyframes text-animation{
+			0%{letter-spacing:100px;}
+			100%{
+				letter-spacing:0px;}}
+		@keyframes fade{
+			0%{
+				opacity:0;}
+			100%{
+				opacity:1;}}
